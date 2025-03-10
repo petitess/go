@@ -9,20 +9,25 @@ type Product struct {
 }
 
 func main() {
-	var productNames [4]string
-	productNames = [4]string{"Apple", "Banana", "Orange", "Grapes"}
-	productNames[2] = "Mango"
-	prices := []float64{100.0, 200.0, 300.0, 400.0}
-	prices = append(prices, 500.0)
-	fmt.Println(prices)
-	fmt.Println(productNames)
+	hobbies := [3]string{"reading", "swimming", "coding"}
+	fmt.Println(hobbies)
+	fmt.Println(hobbies[0])
+	hobbies2 := hobbies[1:3]
+	fmt.Println(hobbies2)
+	hobbies3 := hobbies[:2]
+	fmt.Println(hobbies3)
 
-	slicedPrices := prices[1:3]
-	fmt.Println(slicedPrices)
-	fmt.Println(len(slicedPrices), cap(slicedPrices))
+	goal := []string{"terratest", "golang"}
+	goal[1] = "bicep"
+	fmt.Println(goal)
 
 	var products []Product
 	products = append(products, Product{"book", "1", 9.99})
 	products = append(products, Product{"pen", "2", 1.99})
 	fmt.Println(products)
+
+	prices := []float64{11.99, 3.99, 25.20}
+	discountPrices := []float64{9.99, 1.99, 22.20}
+	sum := append(prices, discountPrices...)
+	fmt.Println(sum)
 }
