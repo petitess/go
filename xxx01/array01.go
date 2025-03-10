@@ -20,4 +20,9 @@ func main() {
 	slicedPrices := prices[1:3]
 	fmt.Println(slicedPrices)
 	fmt.Println(len(slicedPrices), cap(slicedPrices))
+
+	var products []Product
+	products = append(products, Product{"book", "1", 9.99})
+	products = append(products, Product{"pen", "2", 1.99})
+	fmt.Println(products)
 }
