@@ -1,0 +1,7 @@
+POST HTTP://localhost:8080/login
+content-type: application/json
+
+{
+    "email"    : "karol@nowz.org",   
+    "password":"123456789.abcdef"
+}
