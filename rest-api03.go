@@ -131,7 +131,7 @@ func CreateUpdateAzVnet(token string, resource_path string) {
 				AddressPrefixes:                []string{"10.10.0.128/27"},
 				PrivateEndpointNetworkPolicies: "Enabled",
 				NatGateway: SubResource{
-					Id: "/subscriptions/64854628-b6d8-431f-b2a6-13596afbfabb/resourceGroups/rg-go/providers/Microsoft.Network/natGateways/ng",
+					Id: "/subscriptions/123/resourceGroups/rg-go/providers/Microsoft.Network/natGateways/ng",
 				},
 				Delegations: []Delegation{
 					Delegation{
